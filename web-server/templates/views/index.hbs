@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weatherly</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" class="icon-style" href="images/weather.png" />
+  </head>
+  <body>
+    <div class="main-content">
+    {{>header}}
+    <p>{{desc}}</p>
+    <form>
+      <input type="text" placeholder="Enter address..." required/>
+      <button>Search</button>
+    </form>
+    <p id="weather-data"></p>
+    </div>
+    {{>footer}}
+    <script src="js/client-side.js"></script>
+  </body>
+</html>
