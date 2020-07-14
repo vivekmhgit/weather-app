@@ -7,7 +7,7 @@ weatherForm.addEventListener("submit", (event) => {
   const address = searchText.value;
   info.setAttribute("style", "color:palegreen;");
   info.textContent = "Loading...";
-  fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+  fetch(`/weather?address=${address}`).then((response) => {
     response.json().then((weatherData) => {
       if (weatherData.data) {
         info.textContent = weatherData.data;
