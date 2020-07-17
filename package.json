@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node web-server/express.js"
+    "start": "node web-server/express.js",
+    "dev": "nodemon web-server/express.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
